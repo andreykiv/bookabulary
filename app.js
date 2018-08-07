@@ -23,7 +23,7 @@ app.get("/", function(req, res){
 
 // Index route - display all books.
 
-app.get("/index", function(req, res){
+app.get("/books", function(req, res){
     // get all boks from DB
     Book.find({}, function(err, allBooks){
         if(err){
@@ -34,6 +34,11 @@ app.get("/index", function(req, res){
     });
 });
 
+// new route - show new book form where user can create a new book.
+
+app.get("/books/new", function(req, res){
+    res.render("new");
+});
 
 
 
