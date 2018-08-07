@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+
+<div class="ui raised very padded text container segment">
+    
+  <h2 class="ui header">All books</h2>
+  
+    <div class="ui grid">
+      
+          <% books.forEach(function(book){ %>
+            <div class="three wide column">
+                  <div class="ui divider">
+                      <h4>Title: <%= book.title =%> </h4>
+                        <div class="ui small image">
+                           <img src= <%= book.image =%> >
+                        </div>
+                      <p>Author: <%= book.author =%></p>
+                      <p>Year: <%= book.year =%></p>
+                  </div>
+            </div>
+          <% }) %>
+    </div>
+
+</div>
+
+<% include ./partials/footer %>
