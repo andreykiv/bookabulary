@@ -4,6 +4,8 @@
     
   <h2 class="ui header">All books</h2>
   
+</div>
+
     <div class="ui grid">
       
           <% books.forEach(function(book){ %>
@@ -18,7 +20,13 @@
                   </div>
             </div>
           <% }); %>
+          
     </div>
-</div>
+    
+    
+      <button class="ui secondary button floated"><a href="/">Go Back</a></button>
+    
+
+
 
 <% include ./partials/footer %>

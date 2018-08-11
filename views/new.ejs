@@ -4,29 +4,33 @@
     
   <h2 class="ui header">New book</h2>
   
-    <form class="ui fluid form">
+    <form class="ui fluid form" action="/books" method="POST">
           
         <div class="field">
-            <input type="text" placeholder="Title">
+            <input type="text" name=book[title] placeholder="Title">
         </div>
         
         <div class="ui divider"></div>
         
         <div class="field">
-            <input type="text" placeholder="Author">
+            <input type="text" name=book[author] placeholder="Author">
         </div>
         
         <div class="ui divider"></div>
         
         <div class="field">
-            <input type="text" placeholder="Book cover">
+            <input type="text" name=book[image] placeholder="Book cover">
         </div>
         
         <div class="ui divider"></div>
         
         <div class="field">
-            <input type="number" placeholder="Year published">
+            <input type="number" name=book[year] placeholder="Year published">
         </div>
+        
+        
+            <input type="submit" class="ui button">
+        
         
     </form>
 
